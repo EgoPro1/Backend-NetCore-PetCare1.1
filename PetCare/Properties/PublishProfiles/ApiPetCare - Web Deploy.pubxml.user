@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATIdoPcSYfkOIQVOKgVrBnAAAAAACAAAAAAAQZgAAAAEAACAAAAAXVCQI9KSJYlesnmgmsryaEGt0YNPPGk1C+AbXOmWDGwAAAAAOgAAAAAIAACAAAABLQqax3uNn/TU6uXB8h1m0xFA4KkiersEAvuZoII15NYAAAACTpW+ZLTO8hQtFeAnn6LvivaKpUjd2rhUGqMUowTI05j6ozKtJKkz8osv0AM2JT/GaQAoUr4juv3AdYTwxaoOpCGZr2ZG8xRT7hdrohF4022uGAdVmw8+QtfTFEdwZnNBbR2j9RLntIrMD2yKyJO03MYSnej1C66+oxA+sQOQk5UAAAADrPclqFE5qkcAMCSrNBBEssYMrzWE6RhIGRQv6BRni66lpQiqr0JZmLB8IJHgxvrhgKIFr1+nCUFebPAvfNIsQ</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="PetCare.Persistence.Context.AppDbContext">
+      <Value>Data Source=tcp:apipetcaredbserver.database.windows.net,1433%3bInitial Catalog=ApiPetCare_db%3bUser Id=carlos%40apipetcaredbserver%3bPassword=Blanca007!</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
