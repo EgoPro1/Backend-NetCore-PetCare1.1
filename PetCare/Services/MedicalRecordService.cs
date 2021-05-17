@@ -26,7 +26,7 @@ namespace PetCare.Services
 
         public Task<IEnumerable<MedicalRecord>> ListByProfileIdAsync(int profileId)
         {
-            throw new NotImplementedException();
+            return await _medicalRecordRepository.ListByMedicalProfile(profileId);
         }
 
         public async Task<MedicalRecordResponse> SaveByProfileIdAsync(int profileId, MedicalRecord medicalRecord)
