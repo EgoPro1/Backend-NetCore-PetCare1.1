@@ -49,7 +49,13 @@ namespace PetCare.Persistence.Repositories
             .Include(p => p.PersonProfile)
             .ToListAsync();
 
-
+        public async Task<IEnumerable<Review>> ListCommentByVeterinaryAsync(int VeterinaryId) =>
+            await _context.Reviews
+            .Where(p => p.ProviderId == VeterinaryId)
+            .Include(p => p.PersonProfile)            
+            .Include(p => p.Commentary)
+            .Include(p => p.Qualification)
+            .ToListAsync();        
         public async Task<IEnumerable<Review>> ListByProviderIdAsync(int providerId) =>
             await _context.Reviews
             .Where(p => p.ProviderId == providerId)
