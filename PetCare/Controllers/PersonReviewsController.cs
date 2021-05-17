@@ -27,6 +27,14 @@ namespace PetCare.Controllers
         }
 
         [HttpGet]
+        public async Task<IEnumerable<ReviewResource>> ListCommentByVeterinaryAsync(int VeterinaryId)
+        {
+            var reviews = await _reviewService.ListCommentByVeterinaryAsync(VeterinaryId);
+            var resources = _mapper.Map<IEnumerable<Review>, IEnumerable<ReviewResource>>(reviews);
+            return resources;
+        }
+
+        [HttpGet]
         public async Task<IEnumerable<ReviewResource>> GetAllAsync(int providerId)
         {
             var reviews = await _reviewService.ListByProviderIdAsync(providerId);

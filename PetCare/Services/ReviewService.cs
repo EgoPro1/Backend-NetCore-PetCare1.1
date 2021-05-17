@@ -29,7 +29,7 @@ namespace PetCare.Services
         {
             return await _reviewRepository.ListByCustomerIdAsync(personId);
         }
-        public async Task<IEnumerable<Review>> ListCommentByVeterinary(int VeterinaryId)
+        public async Task<IEnumerable<Review>> ListCommentByVeterinaryAsync(int VeterinaryId)
         {
             return await _reviewRepository.ListCommentByVeterinaryAsync(VeterinaryId);
         }
