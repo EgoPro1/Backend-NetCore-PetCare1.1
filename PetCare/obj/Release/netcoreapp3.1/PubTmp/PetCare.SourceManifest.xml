@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <sitemanifest>
-  <IisApp path="C:\Users\carlo\Desktop\Backend web\deploy\Backend-NetCore-PetCare\PetCare\obj\Release\netcoreapp3.1\PubTmp\Out\" />
-  <dbfullsql path="C:\Users\carlo\Desktop\Backend web\deploy\Backend-NetCore-PetCare\PetCare\obj\Release\netcoreapp3.1\PubTmp\EFSQLScripts\PetCare.Persistence.Context.AppDbContext.sql" />
+  <IisApp path="F:\Cursos\Aplicaciones_Web\Backend-NetCore-PetCare1.1\PetCare\obj\Release\netcoreapp3.1\PubTmp\Out\" />
 </sitemanifest>

@@ -6,11 +6,11 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATIdoPcSYfkOIQVOKgVrBnAAAAAACAAAAAAAQZgAAAAEAACAAAAAXVCQI9KSJYlesnmgmsryaEGt0YNPPGk1C+AbXOmWDGwAAAAAOgAAAAAIAACAAAABLQqax3uNn/TU6uXB8h1m0xFA4KkiersEAvuZoII15NYAAAACTpW+ZLTO8hQtFeAnn6LvivaKpUjd2rhUGqMUowTI05j6ozKtJKkz8osv0AM2JT/GaQAoUr4juv3AdYTwxaoOpCGZr2ZG8xRT7hdrohF4022uGAdVmw8+QtfTFEdwZnNBbR2j9RLntIrMD2yKyJO03MYSnej1C66+oxA+sQOQk5UAAAADrPclqFE5qkcAMCSrNBBEssYMrzWE6RhIGRQv6BRni66lpQiqr0JZmLB8IJHgxvrhgKIFr1+nCUFebPAvfNIsQ</EncryptedPassword>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJdduH5c7yUyslw1Z752UiAAAAAACAAAAAAAQZgAAAAEAACAAAADO4IQ0zqMtBlzfUtEYkwa8kHzZkCAj1Y1eFqfIZ84ZqgAAAAAOgAAAAAIAACAAAABT7APhXBe4y9z5FWBPFkM+H9B7MYC/v6Nk2cmACcOU1iAAAACJxDF8BFErA+2G/9wBP7yxxefMeEl4M7VmGnATnvTg3kAAAAAEzLWqWFjHTRmnz5ibKclYWrRONUEFXMty7NboQMQqN0H51i93UW5xHiF7WDfPBnHMvI+TPNyjmVWQI6bdQxG4</EncryptedPassword>
   </PropertyGroup>
   <ItemGroup>
-    <EFMigrations Include="PetCare.Persistence.Context.AppDbContext">
-      <Value>Data Source=tcp:apipetcaredbserver.database.windows.net,1433%3bInitial Catalog=ApiPetCare_db%3bUser Id=carlos%40apipetcaredbserver%3bPassword=Blanca007!</Value>
-    </EFMigrations>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=%28localdb%29\mssqllocaldb%3bInitial Catalog=WebApiPetCare%3bIntegrated Security=True</Value>
+    </DestinationConnectionStrings>
   </ItemGroup>
 </Project>
