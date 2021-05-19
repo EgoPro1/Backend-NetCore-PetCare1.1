@@ -17,16 +17,16 @@ namespace PetCare.Services
         private readonly IUnitOfWork _unitOfWork;
 
 
-        public MedicalRecordService(IMedicalRecordRepository medicalRecordRepository, IMedicalProfileRepository medicalProfileRepository,  IUnitOfWork unitOfWork)
+        public MedicalRecordService(IMedicalRecordRepository medicalRecordRepository, IMedicalProfileRepository medicalProfileRepository, IUnitOfWork unitOfWork)
         {
             _medicalRecordRepository = medicalRecordRepository;
             _medicalProfileRepository = medicalProfileRepository;
             _unitOfWork = unitOfWork;
         }
 
-        public Task<IEnumerable<MedicalRecord>> ListByProfileIdAsync(int profileId)
+        public async Task<IEnumerable<MedicalRecord>> ListByProfileIdAsync(int profileId)
         {
-            throw new NotImplementedException();
+            return await _medicalRecordRepository.ListByMedicalProfile(profileId);
         }
 
         public async Task<MedicalRecordResponse> SaveByProfileIdAsync(int profileId, MedicalRecord medicalRecord)
@@ -36,8 +36,9 @@ namespace PetCare.Services
                 var medicalProfileDB = _medicalProfileRepository.FindByIdAsync(profileId);
                 medicalRecord.MedicalProfile = medicalProfileDB.Result;
                 medicalRecord.MedicalProfileId = profileId;
+                medicalRecord.CreateAt = DateTime.Now;
 
-                await _medicalRecordRepository.AddAsync( medicalRecord);
+                await _medicalRecordRepository.AddAsync(medicalRecord);
                 await _unitOfWork.CompleteAsync();
 
                 return new MedicalRecordResponse(medicalRecord);
@@ -48,6 +49,6 @@ namespace PetCare.Services
             }
         }
 
-      
+
     }
 }
