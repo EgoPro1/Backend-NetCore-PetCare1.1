@@ -21,10 +21,12 @@ namespace PetCare.Services
         private readonly IUnitOfWork _unitOfWork;
 
         public RequestService(IRequestRepository requestRepository, IPersonProfileRepository customerRepository,
-            IProductRepository serviceRepository, IUnitOfWork unitOfWork)
+            IProductRepository serviceRepository, IUnitOfWork unitOfWork, IPetRepository petRepository, IProviderRepository providerRepository)
         {
             _requestRepository = requestRepository;
             _customerRepository = customerRepository;
+            _providerRepository = providerRepository;
+            _petRepository = petRepository;
             _productepository = serviceRepository;
             _unitOfWork = unitOfWork;
         }
@@ -43,19 +45,29 @@ namespace PetCare.Services
         {
             PersonProfile customer = await _customerRepository.FindByIdAsync(customerId);
             Product product = await _productepository.FindByIdAsync(productId);
-            /*  Pet pet = await _petRepository.FindByIdAsync(petId);
-              Provider provider = await _providerRepository.FindByIdAsync(providerId);*/
+              Pet pet = await _petRepository.FindByIdAsync(petId);
+              Provider provider = await _providerRepository.FindByIdAsync(providerId);
+
+
+
             try
             {
                 /*    if (  pet.Id == petId )
                     {*/
-                request.PetId = petId;
-                request.PersonProfileId = customerId;
+                request.PetId = pet.Id;
+                request.PersonProfileId = customer.Id;
                 request.PersonProfile = customer;
-                request.ProviderId = providerId;
+                request.ProviderId = provider.Id;
                 request.ProductTypeId = productTypeId;
                 request.Product = product;
                 request.ProductId = productId;
+                request.VeterinaryName = provider.BusinessName;
+               //  request.ProductTypeName=product.
+                request.ProductName = product.Name;
+                request.PetName = pet.Name;
+                request.PersonName = customer.Name;
+                //Se debera pasar por la app una fecha para asignar ,por el momento para fines de prueba tomamos el dia de hoy
+                request.DateReservation = DateTime.Now;
                 request.Status = 1;
 
                 await _requestRepository.SaveByCustomerIdAsync(request);

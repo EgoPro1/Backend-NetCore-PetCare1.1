@@ -25,7 +25,7 @@ namespace PetCare.Persistence.Repositories
         {
             return await _context.Pets.FindAsync(id);
         }
-
+     
         public async Task<IEnumerable<Pet>> ListAsync()
         {
             return await _context.Pets.ToListAsync();
