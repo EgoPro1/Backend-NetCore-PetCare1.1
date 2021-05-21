@@ -38,7 +38,6 @@ namespace PetCare.Persistence.Repositories
             await _context.Providers
             .Where(p => p.Address == address)
             .ToListAsync();
-        
 
         public void Remove(Provider servicesProvider)
         {
