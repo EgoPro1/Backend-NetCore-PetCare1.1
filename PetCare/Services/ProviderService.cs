@@ -2,6 +2,7 @@
 using PetCare.Domain.Models;
 using PetCare.Domain.Repositories;
 using PetCare.Domain.Services;
+using PetCare.Resources;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,9 +51,9 @@ namespace PetCare.Services
         {
             return await _servicesProviderRepository.ListAsync();
         }
-        public async Task<IEnumerable<Provider>> ListByAddressAsync(string address)
+        public async Task<IEnumerable<Provider>> ListByAddressAsync(AddressResource address)
         {
-            return await _servicesProviderRepository.ListByAddressAsync(address);
+            return await _servicesProviderRepository.ListByAddressAsync(address.Address);
         }
         public async Task<ProviderResponse> SaveAsync(Provider servicesProvider)
         {
