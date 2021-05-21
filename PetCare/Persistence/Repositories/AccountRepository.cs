@@ -30,7 +30,7 @@ namespace PetCare.Persistence.Repositories
         public Task<Account> GetByUserandPasswordIdAsync(string username, string password) =>
             _context.Accounts
            .Where(x => x.User == username && x.Password == password)
-           .SingleOrDefaultAsync();
+           .FirstAsync();
         //.Include(p => p.User)
     }
 }
