@@ -4515,3 +4515,4 @@ F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\staticwebassets\PetCare.StaticWebAssets.Manifest.cache
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\staticwebassets\PetCare.StaticWebAssets.xml
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.genruntimeconfig.cache
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.csprojAssemblyReference.cache

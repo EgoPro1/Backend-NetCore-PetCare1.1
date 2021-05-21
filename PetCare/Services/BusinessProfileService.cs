@@ -69,14 +69,54 @@ namespace PetCare.Services
             }
         }
 
-        public Task<BusinessProfileResponse> UpdateAsync(int id, BusinessProfile businessProfile)
+        public async Task<BusinessProfileResponse> UpdateAsync(int id, BusinessProfile businessProfile)
         {
-            throw new NotImplementedException();
+            var existingCustomer = await _businessRepository.FindByBusinessId(id);
+
+            if (existingCustomer == null)
+                return new BusinessProfileResponse("business not found");
+
+            existingCustomer.Name = businessProfile.Name;
+            existingCustomer.LastName = businessProfile.LastName;
+            existingCustomer.Phone = businessProfile.Phone;
+            existingCustomer.Age = businessProfile.Age;
+            existingCustomer.Email = businessProfile.Email;
+            existingCustomer.Document = businessProfile.Document;
+            existingCustomer.Photo = businessProfile.Photo;
+
+
+            try
+            {
+
+                _businessRepository.Update(existingCustomer);
+                await _unitOfWork.CompleteAsync();
+
+                return new BusinessProfileResponse(existingCustomer);
+            }
+            catch (Exception ex)
+            {
+                return new BusinessProfileResponse($"An error ocurred while updating the customer: {ex.Message}");
+            }
         }
 
-        public Task<BusinessProfileResponse> DeleteAsync(int id)
+        public async Task<BusinessProfileResponse> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var existingbusiness= await _businessRepository.FindByBusinessId(id);
+            var existingprovider = await _providerRepository.FindByIdAsync(existingbusiness.ProviderId);
+            if (existingbusiness== null)
+                return new BusinessProfileResponse("customer not found.");
+
+            try
+            {
+                _businessRepository.Remove(existingbusiness);
+                _providerRepository.Remove(existingprovider);
+                await _unitOfWork.CompleteAsync();
+                return new BusinessProfileResponse(existingbusiness);
+            }
+            catch (Exception ex)
+            {
+                return new BusinessProfileResponse($"An error ocurred while deleting the customer: {ex.Message}");
+            }
         }
 
         public Task<BusinessProfileResponse> FindByIdAsync(int id)
@@ -94,9 +134,9 @@ namespace PetCare.Services
             return await _businessRepository.ListFindByProviderId(providerId);
         }
 
-        public async Task<BusinessProfile> FindByProviderId(int providerId)
+        public async Task<BusinessProfile> FindByBusinessId(int providerId)
         {
-            return await _businessRepository.FindByProviderId(providerId);
+            return await _businessRepository.FindByBusinessId(providerId);
         }
     }
 }

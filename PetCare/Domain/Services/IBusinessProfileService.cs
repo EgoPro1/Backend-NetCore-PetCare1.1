@@ -14,7 +14,7 @@ namespace PetCare.Domain.Services
         Task<BusinessProfileResponse> UpdateAsync(int id, BusinessProfile businessProfile);
         Task<BusinessProfileResponse> DeleteAsync(int id);
         Task<BusinessProfileResponse> FindByIdAsync(int id);
-        Task<BusinessProfile> FindByProviderId(int providerId);
+        Task<BusinessProfile> FindByBusinessId(int providerId);
         Task<IEnumerable<BusinessProfile>> ListFindByProviderId(int providerId);
 
     }

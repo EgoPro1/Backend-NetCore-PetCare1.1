@@ -10,10 +10,10 @@ namespace PetCare.Domain.Repositories
     {
         Task<IEnumerable<BusinessProfile>> ListAsync();
         Task AddAsyn(BusinessProfile businessProfile);
-        Task<PersonProfile> FindByIdAsync(int id);
+        Task<BusinessProfile> FindByIdAsync(int id);
         void Update(BusinessProfile businessProfile);
         void Remove(BusinessProfile businessProfile);
-        Task<BusinessProfile> FindByProviderId(int providerId);
+        Task<BusinessProfile> FindByBusinessId(int providerId);
         Task<IEnumerable<BusinessProfile>> ListFindByProviderId(int providerId);
 
     }
