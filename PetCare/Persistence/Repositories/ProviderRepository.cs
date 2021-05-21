@@ -37,9 +37,7 @@ namespace PetCare.Persistence.Repositories
         public async Task<IEnumerable<Provider>> ListByAddressAsync(string address) => 
             await _context.Providers
             .Where(p => p.Address == address)
-            .Include(p => p.Provider)
             .ToListAsync();
-        
 
         public void Remove(Provider servicesProvider)
         {
