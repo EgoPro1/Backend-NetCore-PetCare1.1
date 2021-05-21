@@ -7,7 +7,9 @@ namespace PetCare.Resources
 {
     public class ReviewResource
     {
-        public int Id { get; set; }
+        //  public int Id { get; set; }
+
+        public int PersonProfileId { get; set; }
         public int Qualification { get; set; }
         public string Commentary { get; set; }
 

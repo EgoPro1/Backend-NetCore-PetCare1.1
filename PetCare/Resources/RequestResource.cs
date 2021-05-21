@@ -18,7 +18,7 @@ namespace PetCare.Resources.Save
         public int ProductId { get; set; }
 
         public string VeterinaryName { get; set; }
-        public string ProductTypeName { get; set; }
+     //   public string ProductTypeName { get; set; }
         public string ProductName { get; set; }
         public string PetName { get; set; }
         public DateTime DateReservation { get; set; }

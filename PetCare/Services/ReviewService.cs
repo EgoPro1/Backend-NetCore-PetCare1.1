@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace PetCare.Services
 {
+
     public class ReviewService : IReviewService
     {
         private readonly IReviewRepository _reviewRepository;
@@ -29,10 +30,17 @@ namespace PetCare.Services
         {
             return await _reviewRepository.ListByCustomerIdAsync(personId);
         }
+
         public async Task<IEnumerable<Review>> ListCommentByVeterinaryAsync(int VeterinaryId)
         {
             return await _reviewRepository.ListCommentByVeterinaryAsync(VeterinaryId);
         }
+
+        //public async Task<IEnumerable<Review>> ListCommentByVeterinaryAsync(int VeterinaryId)
+        //{
+        //    return await _reviewRepository.ListCommentByVeterinaryAsync(VeterinaryId);
+        //}
+
         public async Task<IEnumerable<Review>> ListByProviderIdAsync(int providerId)
         {
             return await _reviewRepository.ListByProviderIdAsync(providerId);
