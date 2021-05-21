@@ -26,9 +26,6 @@ namespace PetCare.Controllers
             _mapper = mapper;
         }
 
-
-    
-
         [HttpGet]
         public async Task<IEnumerable<ReviewResource>> GetAllAsync(int providerId)
         {

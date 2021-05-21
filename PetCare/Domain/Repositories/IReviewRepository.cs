@@ -16,7 +16,6 @@ namespace PetCare.Domain.Repositories
         void Remove(Review review);
 
         Task SaveByCustomerIdAsync(Review review);
-       // Task<IEnumerable<Review>> ListCommentByVeterinaryAsync(int VeterinaryId);
         Task<IEnumerable<Review>> ListByCustomerIdAsync(int personId);
         Task<IEnumerable<Review>> ListByProviderIdAsync(int providerId);
     }

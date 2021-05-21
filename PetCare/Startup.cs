@@ -62,9 +62,10 @@ namespace PetCare
                     };
                 });
 
-           services.AddDbContext<AppDbContext>(opt =>
+            services.AddDbContext<AppDbContext>(opt =>
             opt.UseMySQL(Configuration.GetConnectionString("DefaultConnection")));
- /*
+
+/*  
             services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 */
