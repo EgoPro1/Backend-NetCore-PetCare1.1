@@ -15,6 +15,7 @@ namespace PetCare.Domain.Services
         Task<ProviderResponse> DeleteAsync(int id);
         Task<ProviderResponse> FindByIdAsync(int id);
         Task<IEnumerable<Provider>> ListBySuscriptionPlanIdAsync(int categoryId);
+        Task<IEnumerable<Provider>> ListByAddressAsync(string Address);
 
     }
 }

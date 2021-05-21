@@ -50,7 +50,10 @@ namespace PetCare.Services
         {
             return await _servicesProviderRepository.ListAsync();
         }
-
+        public async Task<IEnumerable<Provider>> ListByAddressAsync(string address)
+        {
+            return await _servicesProviderRepository.ListByAddressAsync(address);
+        }
         public async Task<ProviderResponse> SaveAsync(Provider servicesProvider)
         {
             Account account = new Account();
