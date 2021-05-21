@@ -23,7 +23,7 @@ namespace PetCare.Persistence.Repositories
 
         public Task<PersonProfile> FindByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _context.BusinessProfile.FindAsync(id);
         }
 
         public async Task<IEnumerable<BusinessProfile>> ListFindByProviderId(int providerId) =>
@@ -46,12 +46,12 @@ namespace PetCare.Persistence.Repositories
 
         public void Remove(BusinessProfile businessProfile)
         {
-            throw new NotImplementedException();
+            _context.BusinessProfile.Remove(businessProfile);
         }
 
         public void Update(BusinessProfile businessProfile)
         {
-            throw new NotImplementedException();
+            _context.Update(businessProfile);
         }
 
 
