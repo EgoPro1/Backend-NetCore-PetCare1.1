@@ -13,37 +13,26 @@ using PetCare.Resources;
 namespace PetCare.Controllers
 {
   
-    [Route("api/providers")]
-    public class ProviderController : ControllerBase
+    [Route("api/providers/address")]
+    public class ProviderSearchController : ControllerBase
     {
         private readonly IProviderService _servicesProviderService;
         private readonly IMapper _mapper;
 
-        public ProviderController(IProviderService servicesProviderService, IMapper mapper)
+        public ProviderSearchController(IProviderService servicesProviderService, IMapper mapper)
         {
             _servicesProviderService = servicesProviderService;
             _mapper = mapper;
         }
 
-      [HttpGet]
-        public async Task<IEnumerable<ProviderResource>> GetAllProviders()
+  
+        [HttpGet]
+        public async Task<IEnumerable<ProviderResource>> GetProviderbyAdress([FromBody] AddressResource address)
         {
-
-            var providers = await _servicesProviderService.ListAsync();
+            var providers = await _servicesProviderService.ListByAddressAsync(address);
             var resources = _mapper.Map<IEnumerable<Provider>, IEnumerable<ProviderResource>>(providers);
             return resources;
         }
-        
-        
-
-        [HttpGet("{providerId}")]
-        public async Task<ProviderResource> GetProviderById(int providerId)
-        {
-            var providerDB = await _servicesProviderService.FindByIdAsync(providerId);
-            var resource = _mapper.Map<Provider, ProviderResource>(providerDB.ProductsProvider);
-            return resource;
-        }
-
 
 
 

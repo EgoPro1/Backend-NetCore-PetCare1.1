@@ -4357,6 +4357,15 @@ F:\Cursos\Aplicaciones Web\Backend-NetCore-PetCare1\PetCare\obj\Debug\netcoreapp
 F:\Cursos\Aplicaciones Web\Backend-NetCore-PetCare1\PetCare\obj\Debug\netcoreapp3.1\PetCare.dll
 F:\Cursos\Aplicaciones Web\Backend-NetCore-PetCare1\PetCare\obj\Debug\netcoreapp3.1\PetCare.pdb
 F:\Cursos\Aplicaciones Web\Backend-NetCore-PetCare1\PetCare\obj\Debug\netcoreapp3.1\PetCare.genruntimeconfig.cache
+<<<<<<< HEAD
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.csproj.CoreCompileInputs.cache
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.MvcApplicationPartsAssemblyInfo.cs
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.MvcApplicationPartsAssemblyInfo.cache
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.AssemblyInfoInputs.cache
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.AssemblyInfo.cs
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.dll
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.pdb
+=======
 F:\Cursos\Aplicaciones_Web\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\appsettings.Development.json
 F:\Cursos\Aplicaciones_Web\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\appsettings.json
 F:\Cursos\Aplicaciones_Web\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -4516,6 +4525,7 @@ F:\Cursos\Aplicaciones_Web\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcorea
 F:\Cursos\Aplicaciones_Web\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.dll
 F:\Cursos\Aplicaciones_Web\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.pdb
 F:\Cursos\Aplicaciones_Web\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.genruntimeconfig.cache
+>>>>>>> origin/develop
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\appsettings.Development.json
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\appsettings.json
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -4662,16 +4672,24 @@ F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+<<<<<<< HEAD
+=======
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.csprojAssemblyReference.cache
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.csproj.CoreCompileInputs.cache
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.MvcApplicationPartsAssemblyInfo.cs
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.MvcApplicationPartsAssemblyInfo.cache
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.AssemblyInfoInputs.cache
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.AssemblyInfo.cs
+>>>>>>> origin/develop
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.RazorTargetAssemblyInfo.cache
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.csproj.CopyComplete
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\staticwebassets\PetCare.StaticWebAssets.Manifest.cache
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\staticwebassets\PetCare.StaticWebAssets.xml
+<<<<<<< HEAD
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.genruntimeconfig.cache
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.csprojAssemblyReference.cache
+=======
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.dll
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.pdb
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.genruntimeconfig.cache
+>>>>>>> origin/develop

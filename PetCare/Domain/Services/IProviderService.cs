@@ -1,5 +1,6 @@
 ﻿using PetCare.Domain.Comunication;
 using PetCare.Domain.Models;
+using PetCare.Resources;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace PetCare.Domain.Services
         Task<ProviderResponse> DeleteAsync(int id);
         Task<ProviderResponse> FindByIdAsync(int id);
         Task<IEnumerable<Provider>> ListBySuscriptionPlanIdAsync(int categoryId);
+        Task<IEnumerable<Provider>> ListByAddressAsync(AddressResource address);
 
     }
 }

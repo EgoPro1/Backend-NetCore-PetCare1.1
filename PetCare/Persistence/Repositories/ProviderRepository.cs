@@ -34,6 +34,11 @@ namespace PetCare.Persistence.Repositories
             throw new NotImplementedException();
         }
 
+        public async Task<IEnumerable<Provider>> ListByAddressAsync(string address) => 
+            await _context.Providers
+            .Where(p => p.Address == address)
+            .ToListAsync();
+        
 
         public void Remove(Provider servicesProvider)
         {
