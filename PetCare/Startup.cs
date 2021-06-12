@@ -157,11 +157,6 @@ namespace PetCare
                  .SetIsOriginAllowed(origin => true)
                  .AllowAnyMethod()
                  .AllowAnyHeader());
-            app.UseHttpsRedirection();
-
-            app.UseHttpsRedirection();
-
-
             app.UseRouting();
             // Add Authentication Support
             app.UseAuthentication();
