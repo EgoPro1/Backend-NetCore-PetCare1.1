@@ -25,13 +25,13 @@ namespace PetCare.Controllers
         }
 
         [HttpGet]
-        public async Task<PersonProfileResource> GetAllPeople()
+        public async Task<List<PersonProfileResource>> GetAllPeople()
         {
             
             var customers = await _customerService.ListAsync();
             var resources = _mapper.Map<IEnumerable<PersonProfile>, IEnumerable<PersonProfileResource>>(customers);
             var list = resources.ToList<PersonProfileResource>();
-            return list[1];
+            return list;
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPersonById(int id)

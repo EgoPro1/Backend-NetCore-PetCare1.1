@@ -9,7 +9,6 @@ using PetCare.Domain.Models;
 using PetCare.Domain.Services;
 using PetCare.Extensions;
 using PetCare.Resources;
-using Senparc.Weixin.Entities;
 
 namespace PetCare.Controllers
 {
