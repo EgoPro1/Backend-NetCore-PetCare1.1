@@ -41,16 +41,23 @@ namespace PetCare.Services
         {
             // var user = _users.SingleOrDefault(x =>
             // x.User == body.Username && x.Password == body.Password);
-
-            var user = _accountRepository.GetByUserandPasswordIdAsync(body.Username,body.Password);
-            //Return null when user not found
-
-            if (user.Result == null)
+            try
+            {
+                var user = _accountRepository.GetByUserandPasswordIdAsync(body.Username,body.Password);
+             //Return null when user not found
+                if (user.Result == null)
+                {
+                    return null;
+                }
+            var token = generateJwtToken(user.Result);
+            return new AuthenticateResponse(user.Result, token);
+            }
+            catch (Exception e)
             {
                 return null;
             }
-            var token = generateJwtToken(user.Result);
-            return new AuthenticateResponse(user.Result, token);
+
+            
         }
         
 

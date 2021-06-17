@@ -4678,3 +4678,10 @@ F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\staticwebassets\PetCare.StaticWebAssets.Manifest.cache
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\staticwebassets\PetCare.StaticWebAssets.xml
 F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\obj\Debug\netcoreapp3.1\PetCare.genruntimeconfig.cache
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.Polly.dll
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\Polly.dll
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\Polly.Extensions.Http.dll
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\Senparc.CO2NET.dll
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\Senparc.CO2NET.APM.dll
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\Senparc.NeuChar.dll
+F:\Cursos\Aplicaciones_Web\Nueva carpeta\Nueva carpeta\Backend-NetCore-PetCare1.1\PetCare\bin\Debug\netcoreapp3.1\Senparc.Weixin.dll
