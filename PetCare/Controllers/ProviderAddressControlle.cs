@@ -9,6 +9,7 @@ using PetCare.Domain.Models;
 using PetCare.Domain.Services;
 using PetCare.Extensions;
 using PetCare.Resources;
+using Senparc.Weixin.Entities;
 
 namespace PetCare.Controllers
 {
@@ -34,7 +35,12 @@ namespace PetCare.Controllers
             return resources;
         }
 
-
+        //public async <IJsonResult> GetProviderbyAdress([FromBody] AddressResource address)
+        //{
+        //    var providers = await _servicesProviderService.ListByAddressAsync(address);
+        //    var resources = providers;
+        //    return Ok(value: resources);
+        //}
 
     }
 }

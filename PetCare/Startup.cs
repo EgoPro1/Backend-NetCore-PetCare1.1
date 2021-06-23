@@ -121,6 +121,9 @@ namespace PetCare
             services.AddScoped<IReviewRepository, ReviewRepository>();
             services.AddScoped<IReviewService, ReviewService>();
 
+            services.AddScoped<IRegionRepository, RegionRepository>();
+            services.AddScoped<IRegionService, RegionService>();
+
             services.AddScoped<IAvailabilityService, AvailabilityService>();
             services.AddScoped<IAvailabilityRepository, AvailabilityRepository>();
 

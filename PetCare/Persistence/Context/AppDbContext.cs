@@ -32,7 +32,8 @@ namespace PetCare.Persistence.Context
         public DbSet<Availability> Availabilities { get; set; }
         public DbSet<BusinessProfile> BusinessProfiles{ get; set; }
         public DbSet<Review> Reviews { get; set; }
-      
+        public DbSet<Region> Regions { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
