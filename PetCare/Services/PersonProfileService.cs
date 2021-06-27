@@ -46,6 +46,8 @@ namespace PetCare.Services
                 await _customerRepository.AddAsyn(customer);
                 await _accountRepository.AddAsyn(account);
                 await _unitOfWork.CompleteAsync();
+                account.Idf = customer.Id;
+                await _unitOfWork.CompleteAsync();
 
                 return new PersonProfileResponse(customer);
             }

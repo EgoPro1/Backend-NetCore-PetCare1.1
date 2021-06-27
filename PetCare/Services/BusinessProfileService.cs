@@ -60,7 +60,8 @@ namespace PetCare.Services
                 await _businessRepository.AddAsyn(businessProfile);
                 await _accountRepository.AddAsyn(account);
                 await _unitOfWork.CompleteAsync();
-
+                account.Idf = businessProfile.Id;
+                await _unitOfWork.CompleteAsync();
                 return new BusinessProfileResponse(businessProfile);
             }
             catch (Exception ex)

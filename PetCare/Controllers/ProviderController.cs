@@ -9,7 +9,6 @@ using PetCare.Domain.Models;
 using PetCare.Domain.Services;
 using PetCare.Extensions;
 using PetCare.Resources;
-using PetCare.Resources.Save;
 
 namespace PetCare.Controllers
 {
@@ -45,20 +44,7 @@ namespace PetCare.Controllers
             return resource;
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> EditRegisterReview(int id, [FromBody] SaveReviewResource resource)
-        {
-            var review = _mapper.Map<SaveReviewResource, Provider>(resource);
-            var result = await _servicesProviderService.UpdateAsync(id, review);
 
-            if (!result.Success)
-            {
-                return BadRequest(result.Message);
-            }
-
-            var reviewResource = _mapper.Map<Provider, ReviewResource>(result.ProductsProvider);
-            return Ok(reviewResource);
-        }
 
 
     }

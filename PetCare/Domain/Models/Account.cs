@@ -13,7 +13,7 @@ namespace PetCare.Domain.Models
         public string Password { get; set; }
         public Rol Rol { get; set; }
         public int RolId { get; set; }
-
+        public int Idf { get; set; }
         public PersonProfile PersonProfile { get; set; }
         
         public BusinessProfile BusinessProfile { get; set; }
