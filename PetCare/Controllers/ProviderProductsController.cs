@@ -15,10 +15,10 @@ using PetCare.Resources.Save;
 namespace PetCare.Controllers
 {
     [Authorize]
-    [Route("api/business/{businessId}/providers/{providerId}/typeproduts/{typeproductId}/products")]
+    [Route("api/products")]
     public class ProductsController : ControllerBase
     {
-        private readonly IProductService _product;
+        private readonly IProductService _product; 
         private readonly IMapper _mapper;
 
         public ProductsController(IProductService product, IMapper mapper)

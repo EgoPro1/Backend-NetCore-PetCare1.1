@@ -34,7 +34,6 @@ namespace PetCare.Controllers
             var requestDB = await _requestService.ListByCostumerIdAsync(personId);
             var resource = _mapper.Map<IEnumerable<PersonRequest>, IEnumerable<RequestResource>>(requestDB);
             return resource;
-
         }
 
     }
