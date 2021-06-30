@@ -10,5 +10,7 @@ namespace PetCare.Resources.Save
     {
         [Index(IsUnique = true)]
         public string Name { get; set; }
+        public int PJPId { get; set; }
+        public int TypeProductId { get; set; }
     }
 }

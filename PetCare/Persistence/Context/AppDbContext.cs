@@ -184,8 +184,23 @@ namespace PetCare.Persistence.Context
                  new Rol { Id = 2, Name = "ServicesProvider", Description = "Ofrece Servicios", Publish = true }
               );
 
+            builder.Entity<TypeProduct>().HasData
+            (
+                new Rol { Id = 1, Name = "Baños y Cortes "},
+                new Rol { Id = 2, Name = "Hospedajes" },
+                new Rol { Id = 3, Name = "Vacunas" },
+                new Rol { Id = 4, Name = "Consultas" },
+                new Rol { Id = 5, Name = "Entrenadores" },
+                new Rol { Id = 6, Name = "Agenda Mascotera" },
+                new Rol { Id = 7, Name = "Alimentos" },
+                new Rol { Id = 8, Name = "Productos" },
+                new Rol { Id = 9, Name = "Juguetes" }
+             );
+
+
+
             // Naming conventions Policy
-          //  builder.ApplySnakeCaseNamingConvention();
+            //  builder.ApplySnakeCaseNamingConvention();
 
         }
     }

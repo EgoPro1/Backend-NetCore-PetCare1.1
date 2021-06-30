@@ -33,8 +33,8 @@ namespace PetCare.Persistence.Repositories
         public async Task SaveByTypeProductIdAsync(int typeProductId, Product product)
         {
             var ProviderJoinTypeProduct = await _context.ProviderJoinProducts.FindAsync(typeProductId);
-            product.PJPId = ProviderJoinTypeProduct.Id;
-            product.TypeProductId = ProviderJoinTypeProduct.TypeProductId;
+      //      product.PJPId = ProviderJoinTypeProduct.Id;
+      //      product.TypeProductId = ProviderJoinTypeProduct.TypeProductId;
             await _context.Products.AddAsync(product);
         }
          

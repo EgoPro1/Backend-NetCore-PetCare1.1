@@ -29,7 +29,7 @@ namespace PetCare.Controllers
         }
         
         [HttpPost("{typeproductId}")]
-        public async Task<IActionResult> AssignTypeProduct(int providerId, int typeproductId)
+        public async Task<IActionResult> AssignTypeProduct([FromBody] SaveProductTypeResource resource,int providerId, int typeproductId)
         {
 
           var result = await _providerJoinProducts.AssignProviderProduct(providerId, typeproductId);
