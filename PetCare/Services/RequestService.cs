@@ -16,12 +16,12 @@ namespace PetCare.Services
         private readonly IProductRepository _productepository;
         private readonly IPetRepository _petRepository;
         private readonly IProviderRepository _providerRepository;
-
+        private readonly ITypeProductRepository _typroduct;
 
         private readonly IUnitOfWork _unitOfWork;
 
         public RequestService(IRequestRepository requestRepository, IPersonProfileRepository customerRepository,
-            IProductRepository serviceRepository, IUnitOfWork unitOfWork, IPetRepository petRepository, IProviderRepository providerRepository)
+            IProductRepository serviceRepository, IUnitOfWork unitOfWork, IPetRepository petRepository, IProviderRepository providerRepository, ITypeProductRepository typeProductRepository)
         {
             _requestRepository = requestRepository;
             _customerRepository = customerRepository;
@@ -29,6 +29,7 @@ namespace PetCare.Services
             _petRepository = petRepository;
             _productepository = serviceRepository;
             _unitOfWork = unitOfWork;
+            _typroduct = typeProductRepository;
         }
 
         public async Task<IEnumerable<PersonRequest>> ListByCostumerIdAsync(int customerId)
@@ -44,6 +45,7 @@ namespace PetCare.Services
         public async Task<RequestResponse> SaveByCustomerIdAsync(int customerId, int providerId, int productTypeId, int productId, int petId, PersonRequest request)
         {
             PersonProfile customer = await _customerRepository.FindByIdAsync(customerId);
+            TypeProduct type = await _typroduct.FindByIdAsync(productTypeId);
             Product product = await _productepository.FindByIdAsync(productId);
               Pet pet = await _petRepository.FindByIdAsync(petId);
               Provider provider = await _providerRepository.FindByIdAsync(providerId);
@@ -60,7 +62,7 @@ namespace PetCare.Services
                 request.Product = product;
                 request.ProductId = productId;
                 request.VeterinaryName = provider.BusinessName;
-               //  request.ProductTypeName=product.
+                request.ProductTypeName = type.Name;
                 request.ProductName = product.Name;
                 request.PetName = pet.Name;
                 request.PersonName = customer.Name;
