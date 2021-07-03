@@ -52,20 +52,6 @@ namespace PetCare.Controllers
 
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> EditStatus(int id, [FromBody] SaveRequestResource resource)
-        {
-            var request = _mapper.Map<SaveRequestResource, PersonRequest>(resource);
-            var result = await _requestService.UpdateByCustomerIdAsync(id, request);
-
-            if (!result.Success)
-            {
-                return BadRequest(result.Message);
-            }
-
-            var customerResource = _mapper.Map<PersonRequest,RequestResource>(result.Request);
-            return Ok(customerResource);
-        }
 
     }
 }
