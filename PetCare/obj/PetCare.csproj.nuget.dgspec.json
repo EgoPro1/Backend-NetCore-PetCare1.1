@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Cursos\\Aplicaciones_Web\\Nueva carpeta\\Nueva carpeta\\Backend-NetCore-PetCare1.1\\PetCare\\PetCare.csproj": {}
+    "F:\\Cursos\\Aplicaciones_Web\\Nueva carpeta\\Nueva carpeta\\develop\\Backend-NetCore-PetCare1.1\\PetCare\\PetCare.csproj": {}
   },
   "projects": {
-    "F:\\Cursos\\Aplicaciones_Web\\Nueva carpeta\\Nueva carpeta\\Backend-NetCore-PetCare1.1\\PetCare\\PetCare.csproj": {
+    "F:\\Cursos\\Aplicaciones_Web\\Nueva carpeta\\Nueva carpeta\\develop\\Backend-NetCore-PetCare1.1\\PetCare\\PetCare.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Cursos\\Aplicaciones_Web\\Nueva carpeta\\Nueva carpeta\\Backend-NetCore-PetCare1.1\\PetCare\\PetCare.csproj",
+        "projectUniqueName": "F:\\Cursos\\Aplicaciones_Web\\Nueva carpeta\\Nueva carpeta\\develop\\Backend-NetCore-PetCare1.1\\PetCare\\PetCare.csproj",
         "projectName": "PetCare",
-        "projectPath": "F:\\Cursos\\Aplicaciones_Web\\Nueva carpeta\\Nueva carpeta\\Backend-NetCore-PetCare1.1\\PetCare\\PetCare.csproj",
+        "projectPath": "F:\\Cursos\\Aplicaciones_Web\\Nueva carpeta\\Nueva carpeta\\develop\\Backend-NetCore-PetCare1.1\\PetCare\\PetCare.csproj",
         "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
-        "outputPath": "F:\\Cursos\\Aplicaciones_Web\\Nueva carpeta\\Nueva carpeta\\Backend-NetCore-PetCare1.1\\PetCare\\obj\\",
+        "outputPath": "F:\\Cursos\\Aplicaciones_Web\\Nueva carpeta\\Nueva carpeta\\develop\\Backend-NetCore-PetCare1.1\\PetCare\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

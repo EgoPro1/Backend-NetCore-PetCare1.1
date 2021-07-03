@@ -12,6 +12,7 @@ namespace PetCare.Domain.Services
         Task<RequestResponse> SaveByCustomerIdAsync(int customerId, int providerId,int productTypeId, int productId, int petId, PersonRequest Request);
         Task<IEnumerable<PersonRequest>> ListByCostumerIdAsync(int customerId);
         Task<IEnumerable<PersonRequest>> ListByProductIdAsync(int providerId);
-        //Task<PersonRequest> Update(int requestId, PersonRequest personRequest);
+        // Task<RequestResponse> Update(int requestId, PersonRequest personRequest);
+        Task<RequestResponse> UpdateByCustomerIdAsync(int Id, PersonRequest request);
     }
 }

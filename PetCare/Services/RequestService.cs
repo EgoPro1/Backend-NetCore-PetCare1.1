@@ -48,8 +48,6 @@ namespace PetCare.Services
               Pet pet = await _petRepository.FindByIdAsync(petId);
               Provider provider = await _providerRepository.FindByIdAsync(providerId);
 
-
-
             try
             {
                 /*    if (  pet.Id == petId )
@@ -81,6 +79,31 @@ namespace PetCare.Services
             {
                 return new RequestResponse($"An error ocurred while saving the request: {ex.Message}");
             }
+        }
+        public async Task<RequestResponse> UpdateByCustomerIdAsync( int id, PersonRequest request)
+        {
+            var existingCustomer = await _requestRepository.FindById(id);
+
+            if (existingCustomer == null)
+                return new RequestResponse("request not found");
+
+          
+            existingCustomer.Status = request.Status;
+
+
+            try
+            {
+
+                _requestRepository.Update(existingCustomer);
+                await _unitOfWork.CompleteAsync();
+
+                return new RequestResponse(existingCustomer);
+            }
+            catch (Exception ex)
+            {
+                return new RequestResponse($"An error ocurred while updating the customer: {ex.Message}");
+            }
+
         }
 
         /*  public async Task<PersonRequest> Update(int requestId, PersonRequest personRequest)
